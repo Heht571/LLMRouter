@@ -1,0 +1,89 @@
+@import "tailwindcss";
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #f9fafb;
+    color: #111827;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #111827;
+      color: #f9fafb;
+    }
+  }
+}
+
+@layer components {
+  .glass {
+    backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(to bottom right, #3b82f6, #a855f7, #1d4ed8);
+  }
+  
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+  
+  .card-hover:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+  }
+  
+  .btn-primary {
+    background: linear-gradient(to right, #3b82f6, #a855f7);
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(to right, #2563eb, #9333ea);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .btn-secondary {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #1f2937;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .btn-secondary {
+      color: #f9fafb;
+    }
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.3s ease-out;
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
