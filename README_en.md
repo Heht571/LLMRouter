@@ -124,7 +124,7 @@ cp .env.example .env
 go run cmd/apiserver/main.go
 ```
 
-The backend service will start at `http://localhost:8081`
+The backend service will start at `http://localhost:8080`
 
 ### 3. Start Frontend Service
 
@@ -141,10 +141,27 @@ npm run dev
 
 The frontend service will start at `http://localhost:5173`
 
+## 📸 Interface Screenshots
+
+### Seller Dashboard
+![Seller Dashboard](pic/英文2025-06-20%2010.14.54.png)
+
+### API Service Management
+![API Service Management](pic/英文2025-06-20%2010.15.07.png)
+
+### Buyer Dashboard
+![Buyer Dashboard](pic/英文2025-06-20%2010.15.36.png)
+
+### API Marketplace
+![API Marketplace](pic/英文2025-06-20%2010.15.56.png)
+
+### Login
+![Login](pic/英文2025-06-20%2010.17.31.png)
+
 ## 📚 API Documentation
 
 After starting the backend service, you can access the API documentation at:
-- Swagger UI: `http://localhost:8081/swagger/index.html`
+- Swagger UI: `http://localhost:8080/swagger/index.html`
 
 ### Main API Endpoints
 

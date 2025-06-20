@@ -124,7 +124,7 @@ cp .env.example .env
 go run cmd/apiserver/main.go
 ```
 
-后端服务将在 `http://localhost:8081` 启动
+后端服务将在 `http://localhost:8080` 启动
 
 ### 3. 启动前端服务
 
@@ -141,10 +141,24 @@ npm run dev
 
 前端服务将在 `http://localhost:5173` 启动
 
+## 📸 界面截图
+
+### 卖家仪表盘
+![卖家仪表盘](pic/简中2025-06-19%2011.32.02.png)
+
+### 登录界面
+![登录界面](pic/简中2025-06-19%2011.32.18.png)
+
+### API市场
+![API市场](pic/简中2025-06-19%2011.33.54.png)
+
+### 卖家API服务管理
+![卖家API服务管理](pic/简中2025-06-20%2009.15.47.png)
+
 ## 📚 API文档
 
 启动后端服务后，可以通过以下地址访问API文档：
-- Swagger UI: `http://localhost:8081/swagger/index.html`
+- Swagger UI: `http://localhost:8080/swagger/index.html`
 
 ### 主要API端点
 

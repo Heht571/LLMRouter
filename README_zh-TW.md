@@ -124,7 +124,7 @@ cp .env.example .env
 go run cmd/apiserver/main.go
 ```
 
-後端服務將在 `http://localhost:8081` 啟動
+後端服務將在 `http://localhost:8080` 啟動
 
 ### 3. 啟動前端服務
 
@@ -141,10 +141,27 @@ npm run dev
 
 前端服務將在 `http://localhost:5173` 啟動
 
+## 📸 介面截圖
+
+### API市場
+![API市場](pic/繁中2025-06-20%2010.16.10.png)
+
+### 買家端儀表板
+![買家端儀表板](pic/繁中2025-06-20%2010.16.26.png)
+
+### 登入介面
+![登入介面](pic/繁中2025-06-20%2010.17.18.png)
+
+### 賣家端儀表板
+![賣家端儀表板](pic/繁中2025-06-20%2010.17.58.png)
+
+### 賣家API管理介面
+![賣家API管理介面](pic/繁中2025-06-20%2010.18.07.png)
+
 ## 📚 API文件
 
 啟動後端服務後，可以通過以下地址存取API文件：
-- Swagger UI: `http://localhost:8081/swagger/index.html`
+- Swagger UI: `http://localhost:8080/swagger/index.html`
 
 ### 主要API端點
 
